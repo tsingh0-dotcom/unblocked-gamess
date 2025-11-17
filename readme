@@ -1,0 +1,26 @@
+# StrongDog-like Static Site (no movies)
+
+This repository contains a minimal static website inspired by strongdog.xp but without any movie content. It focuses on short posts, links, images, and a retro/neon aesthetic.
+
+Features
+- Responsive single-page layout
+- Hero section and navigation
+- Grid of cards for posts (no video or movie embeds)
+- About and contact sections
+- Theme toggle (dark / light)
+- Easy to deploy on GitHub Pages or any static host
+
+How to use
+1. Clone or copy the files to a new repository.
+2. Customize content in `index.html`.
+3. Optionally replace placeholder images with your own in an `assets/` folder.
+4. Push to GitHub and enable GitHub Pages (branch `main`, folder `/`).
+
+Files included
+- `index.html` — main page
+- `styles.css` — styles
+- `script.js` — small interactive behaviors
+- `README.md` — this file
+
+License
+Use and modify freely.
