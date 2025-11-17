@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>strongdog — JSON-driven (no movies)</title>
+  <meta name="description" content="A compact, retro-styled site inspired by strongdog.xp — posts loaded from posts.json." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">strongdog</a>
+      <nav class="main-nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#posts">Posts</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>strongdog</h1>
+        <p class="tagline">Short things, links, thoughts. Clean, fast, simple. No movies.</p>
+        <form id="search" class="search" role="search" aria-label="Search posts">
+          <input type="search" id="q" placeholder="Search posts, tags, or titles…" />
+        </form>
+      </div>
+    </section>
+
+    <section id="posts" class="container posts-section">
+      <h2>Recent Posts</h2>
+      <div class="grid" id="grid">
+        <!-- Cards will be rendered here from posts.json -->
+      </div>
+      <p class="more-note">Add or edit posts in <code>posts.json</code>.</p>
+    </section>
+
+    <section id="about" class="container about-section">
+      <h2>About</h2>
+      <p>Inspired by tiny personal sites and linklogs. This is a compact, privacy-friendly page: no tracking, no embedded movies, just content.</p>
+    </section>
+
+    <section id="contact" class="container contact-section">
+      <h2>Contact</h2>
+      <p>If you'd like to reach out, email <a href="mailto:hello@example.com">hello@example.com</a> or follow on <a href="#">mastodon</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> strongdog — minimalist clone (no movies)</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
